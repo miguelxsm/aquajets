@@ -1,0 +1,177 @@
+/* === GENERAL RESET === */
+body {
+  background-color: lightcyan;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* === CONTENEDOR CENTRAL === */
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* === HEADER === */
+header {
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+}
+header img {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* === MENÚ === */
+.menu {
+  background-color: lightblue;
+  text-align: center;
+  padding: 10px;
+}
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.menu li {
+  display: inline;
+  margin: 0 15px;
+}
+.menu a {
+  text-decoration: none;
+  color: navy;
+  font-weight: bold;
+}
+
+/* === MAIN === */
+main {
+  padding: 20px;
+  text-align: center;
+}
+main h2 {
+  color: navy;
+  margin-bottom: 15px;
+}
+main p {
+  color: black;
+  margin-bottom: 15px;
+}
+main img {
+  width: 100%;
+  max-width: 200px;
+  margin-top: 10px;
+  border: 2px solid navy;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* === VIDEO === */
+video {
+  width: 100%;
+  max-height: 300px;
+  margin: 20px auto 0;
+  display: block;
+}
+
+/* === FORMULARIO === */
+form {
+  background-color: white;
+  border: 2px solid lightblue;
+  padding: 15px;
+  margin: 20px auto;
+  width: 300px;
+  text-align: left;
+}
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+form input,
+form textarea {
+  width: 95%;
+  margin-top: 5px;
+  padding: 5px;
+  border: 1px solid gray;
+  box-sizing: border-box;
+  display: block;
+}
+
+/* === IFRAME (MAPA) === */
+iframe {
+  width: 90%;
+  height: 300px;
+  margin: 15px auto 0;
+  border: 2px solid navy;
+  display: block;
+}
+
+/* === BOTÓN === */
+.boton {
+  background-color: navy;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px 5px 0;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+}
+
+/* === FOOTER === */
+footer {
+  background-color: white;
+  text-align: center;
+  padding: 15px;
+  border-top: 2px solid lightblue;
+}
+footer p {
+  font-size: 12px;
+  color: navy;
+  margin: 0;
+}
+
+/* === MEDIA QUERIES === */
+
+/* MÓVIL: pantallas ≤ 480px */
+@media (max-width: 480px) {
+  .menu li {
+    display: block;
+    margin: 8px 0;
+  }
+  form,
+  video,
+  iframe {
+    width: 100%;
+  }
+  .boton {
+    display: block;
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+/* TABLET: 481px – 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+  video {
+    max-height: 200px;
+  }
+  form {
+    width: 80%;
+  }
+}
+
+/* ESCRITORIO: > 768px */
+@media (min-width: 769px) {
+  video {
+    width: 80%;
+  }
+  form {
+    width: 300px;
+  }
+}
